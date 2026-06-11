@@ -14,6 +14,38 @@ layer on top.
 - **zustand** (game state) · **zod** (content validation) · WebAudio (all sound synthesized)
 - **Bun** as package manager / dev runner; deploys zero-config on Vercel
 
+## Architecture
+
+`src/` follows a DDD-style modular layout: code is split by domain, and each
+domain owns its `components/` (UI), `services/` (hooks + pure logic) and
+`types/`:
+
+```
+src/
+├─ app/                  # Next.js routes — composition root only
+├─ domains/
+│  ├─ game/              # the playable arena
+│  │  ├─ index.ts        # public API (GameLoader)
+│  │  ├─ components/     # GameRoot, screens/, arena/, vehicle/, weapons/, fx/
+│  │  ├─ services/       # state/, input/, audio/, arena/, vehicle/, weapons/, fx/
+│  │  └─ types/
+│  ├─ projects/          # portfolio content
+│  │  ├─ index.ts        # client-safe public API (components, schema, types)
+│  │  ├─ server.ts       # server-only API (filesystem content loaders)
+│  │  ├─ components/     # ProjectCard, ProjectIntel, StatBars
+│  │  ├─ services/       # project-schema (zod), projects (loader), seo
+│  │  └─ types/
+│  └─ shared/            # domain-agnostic: site chrome components, seo/og/const services
+├─ i18n/                 # next-intl infrastructure
+├─ content/projects/     # owner-editable project data (JSON)
+└─ messages/             # UI strings (en/fa)
+```
+
+Conventions: `app/` composes domains through their public APIs (`index.ts`,
+`server.ts`); cross-domain imports never reach into internals; barrels stay
+client-safe (anything `server-only` is exported from `server.ts`); the
+`shared` domain never imports from the other domains.
+
 ## Commands
 
 ```sh
@@ -32,7 +64,8 @@ Arrows = drive · **A** = machine gun · **S** = missile · **D** = special
 ## Adding a project
 
 Drop a new JSON file in `src/content/projects/<slug>.json` — no code changes.
-The schema is enforced at build time by `src/lib/project-schema.ts`:
+The schema is enforced at build time by
+`src/domains/projects/services/project-schema.ts`:
 
 ```jsonc
 {

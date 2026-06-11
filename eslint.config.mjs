@@ -8,7 +8,7 @@ const eslintConfig = defineConfig([
   {
     // The game loop mutates refs/vectors inside useFrame callbacks — an
     // R3F idiom the React Compiler rules can't distinguish from render.
-    files: ["src/game/**"],
+    files: ["src/domains/game/**"],
     rules: {
       "react-hooks/refs": "off",
       "react-hooks/immutability": "off",
