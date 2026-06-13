@@ -1,0 +1,49 @@
+{
+  "slug": "book-summarizer",
+  "order": 4,
+  "period": "2026 — present",
+  "status": "active",
+  "tech": [
+    "Python",
+    "Multi-agent pipeline",
+    "Prompt-injection defence",
+    "LLM-as-judge",
+    "Gemini"
+  ],
+  "links": {
+    "github": "https://github.com/aliafsahnoudeh/book_summarizer_ai_agent"
+  },
+  "stats": { "firepower": 8, "armor": 9, "speed": 7, "special": 7 },
+  "i18n": {
+    "en": {
+      "title": "Book Summarizer AI Agent",
+      "tagline": "An agentic PDF-to-summary system with the safety controls of a production service.",
+      "description": [
+        "A multi-stage sub-agent pipeline that reads whole PDF books and produces summaries you can rely on: a GAME-loop planner (BookExplorer) decides whether to skip, skim or read each page; a NoteTaker writes per-chunk notes; and a SummaryComposer picks a retrieval, single-call or chunked-merge strategy based on corpus size. Each role runs on an independently swappable backend.",
+        "Because users upload the documents, the interesting work is defensive: untrusted-content tagging, a per-run canary tripwire that catches and discards leaked instructions, and Pydantic-validated tool inputs that bound the blast radius — with a red-team test suite running on every push. Summary quality is scored by an LLM-as-judge faithfulness pipeline (manual-trigger only, by design), and the whole system is failure-tolerant: pre-emptive rate limiting, retry with backoff, auto-split on quota overflow, resumable state across crashes, and per-run token-cost tracking."
+      ],
+      "highlights": [
+        "Sub-agent pipeline: skip/skim/read planner, note taker, adaptive composer",
+        "Layered prompt-injection defence with a per-run canary tripwire",
+        "Red-team test suite runs on every push",
+        "LLM-as-judge faithfulness evals — manual-trigger only, by design",
+        "Resumable, rate-limited, cost-tracked runs"
+      ]
+    },
+    "fa": {
+      "title": "ایجنت خلاصه‌ساز کتاب",
+      "tagline": "سیستم ایجنتی تبدیل PDF به خلاصه، با کنترل‌های ایمنی در حد یک سرویس پروداکشن.",
+      "description": [
+        "پایپ‌لاینی چندمرحله‌ای از زیرایجنت‌ها که کتاب‌های کامل PDF را می‌خواند و خلاصه‌هایی قابل‌اتکا می‌سازد: برنامه‌ریزِ مبتنی بر حلقهٔ GAME (BookExplorer) برای هر صفحه تصمیم می‌گیرد که رد شود، سرسری بخواند یا دقیق بخواند؛ NoteTaker برای هر قطعه یادداشت می‌نویسد؛ و SummaryComposer بسته به حجم متن، مسیر بازیابی، فراخوانی یکجا یا ادغام تکه‌تکه را انتخاب می‌کند. هر نقش روی بک‌اندی مستقل و قابل‌تعویض اجرا می‌شود.",
+        "چون سندها را کاربران آپلود می‌کنند، بخش جذاب ماجرا دفاعی است: برچسب‌گذاری محتوای نامطمئن، تلهٔ قناریِ هر اجرا که دستورهای نشت‌کرده را پیدا و حذف می‌کند، و اعتبارسنجی ورودی ابزارها با Pydantic که دامنهٔ آسیب را محدود می‌کند — با مجموعه‌آزمون red-team که با هر push اجرا می‌شود. کیفیت خلاصه‌ها با پایپ‌لاین ارزیابی وفاداری LLM-as-judge سنجیده می‌شود (عمداً فقط با اجرای دستی)، و کل سیستم در برابر خطا مقاوم است: محدودسازی پیش‌گیرانهٔ نرخ، تلاش مجدد با backoff، تقسیم خودکار هنگام سررفتن سهمیه، وضعیت قابل ازسرگیری پس از کرش، و ردیابی هزینهٔ توکن در هر اجرا."
+      ],
+      "highlights": [
+        "پایپ‌لاین ساب ایجنت‌ها: برنامه‌ریزِ ردشدن/سرسری/دقیق، یادداشت‌بردار، ترکیب‌کنندهٔ تطبیقی",
+        "دفاع لایه‌لایه در برابر prompt injection با تلهٔ canary در هر اجرا",
+        "مجموعه‌آزمون red-team با هر push اجرا می‌شود",
+        "ارزیابی وفاداری با LLM-as-judge — عمداً فقط با اجرای دستی",
+        "اجراهای قابل ازسرگیری، با محدودیت نرخ و ردیابی هزینه"
+      ]
+    }
+  }
+}

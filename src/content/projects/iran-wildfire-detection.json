@@ -1,0 +1,43 @@
+{
+  "slug": "iran-wildfire-detection",
+  "order": 2,
+  "period": "2025 — present",
+  "status": "active",
+  "tech": ["Python", "asyncio", "DAG executor", "NASA FIRMS", "ESA WorldCover", "Hybrid LLM + rules", "SQLite"],
+  "links": {
+    "github": "https://github.com/aliafsahnoudeh/iran-wildfire-analyst"
+  },
+  "stats": { "firepower": 8, "armor": 9, "speed": 9, "special": 7 },
+  "i18n": {
+    "en": {
+      "title": "Iran Wildfire Detection",
+      "tagline": "Production-grade real-time wildfire detection for Iran — a fault-tolerant multi-stage agent pipeline.",
+      "description": [
+        "A real-time agent that watches Iran's forests so nobody has to refresh NASA dashboards all day. A custom fault-tolerant DAG executor handles dependency resolution, parallel task execution, per-node timeouts, exponential backoff and circuit breakers — degrading gracefully when individual data sources fail. It fuses NASA FIRMS hotspots from three VIIRS satellite products with ESA WorldCover land data, Open-Meteo and OpenWeather — coordinating five-plus external APIs with very different latencies, rate limits and reliability.",
+        "Severity is scored by a hybrid LLM + rule-based system — structured prompting, JSON schema validation, and automatic fallback to rules when the LLM fails — combining fire radiative power, fuel availability, weather and air quality into evidence-based assessments. A single async thread juggles 100+ concurrent API calls; DAG parallelisation cut end-to-end latency by roughly 60%, and ACID-backed SQLite state keeps runs idempotent, deduplicated and fully audited."
+      ],
+      "highlights": [
+        "Fault-tolerant DAG executor: per-node timeouts, backoff, circuit breakers",
+        "Multi-source fusion: 3 VIIRS satellite products + land cover + weather APIs",
+        "Hybrid LLM + rule-based severity scoring with automatic fallback",
+        "100+ concurrent API calls on a single async thread; ~60% latency cut",
+        "ACID-backed state: idempotent runs, deduplication, full audit log"
+      ]
+    },
+    "fa": {
+      "title": "تشخیص آتش‌سوزی جنگل‌های ایران",
+      "tagline": "تشخیص بلادرنگ آتش‌سوزی جنگل‌های ایران در سطح پروداکشن — پایپ‌لاین ایجنتی چندمرحله‌ای و مقاوم در برابر خطا.",
+      "description": [
+        "ایجنتی بلادرنگ که مراقب جنگل‌های ایران است تا کسی مجبور نباشد تمام روز داشبوردهای ناسا را رفرش کند. یک اجراکنندهٔ DAG اختصاصی و مقاوم در برابر خطا، حل وابستگی‌ها، اجرای موازی وظایف، مهلت زمانی برای هر گره، backoff نمایی و قطع‌کنندهٔ مدار را مدیریت می‌کند — و وقتی یکی از منابع داده از کار بیفتد، به‌نرمی افت می‌کند. این سیستم نقاط حرارتی NASA FIRMS از سه محصول ماهواره‌ای VIIRS را با دادهٔ پوشش زمین ESA WorldCover و سرویس‌های Open-Meteo و OpenWeather ترکیب می‌کند — هماهنگیِ بیش از پنج API بیرونی با تأخیرها، محدودیت نرخ و قابلیت اطمینان بسیار متفاوت.",
+        "شدت رویداد را سیستمی ترکیبی از LLM و قواعد امتیازدهی می‌کند — پرامپت ساخت‌یافته، اعتبارسنجی JSON Schema و بازگشت خودکار به قواعد هنگام خطای LLM — که توان تابشی آتش، سوخت موجود، هواشناسی و کیفیت هوا را به ارزیابی مبتنی بر شواهد تبدیل می‌کند. یک ترد async بیش از ۱۰۰ فراخوانی همزمان API را اداره می‌کند؛ موازی‌سازی DAG تأخیر سرتاسری را حدود ۶۰٪ کاهش داده و وضعیت مبتنی بر ACID در SQLite اجراها را idempotent (تکرارِ بی‌اثر)، بدون دادهٔ تکراری و کاملاً قابل حسابرسی نگه می‌دارد."
+      ],
+      "highlights": [
+        "اجراکنندهٔ DAG مقاوم در برابر خطا: مهلت زمانی هر گره، backoff، قطع‌کنندهٔ مدار",
+        "ترکیب چندمنبعی: سه محصول ماهواره‌ای VIIRS + پوشش زمین + سرویس‌های هواشناسی",
+        "امتیازدهی ترکیبی LLM و قواعد با بازگشت خودکار هنگام خطا",
+        "بیش از ۱۰۰ فراخوانی همزمان API روی یک ترد async؛ حدود ۶۰٪ کاهش تأخیر",
+        "وضعیت ACID: اجراهای idempotent، حذف داده‌های تکراری، لاگ کامل حسابرسی"
+      ]
+    }
+  }
+}

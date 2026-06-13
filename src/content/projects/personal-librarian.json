@@ -1,0 +1,39 @@
+{
+  "slug": "personal-librarian",
+  "order": 5,
+  "period": "2025 — present",
+  "status": "active",
+  "tech": ["Python", "ChromaDB", "Hybrid retrieval", "Query expansion", "Multi-agent"],
+  "links": {},
+  "stats": { "firepower": 7, "armor": 7, "speed": 8, "special": 9 },
+  "i18n": {
+    "en": {
+      "title": "Personal Librarian",
+      "tagline": "A multilingual RAG assistant that answers questions across your whole book and document library.",
+      "description": [
+        "A personal librarian that has actually read everything on your shelf — and doesn't care what language any of it was written in. An orchestrator/sub-agent architecture splits the work: a query-expansion sub-agent generates five semantically similar queries in the document's source language, the orchestrator judges whether retrieval found enough evidence before answering, and a refiner responds in whatever language you asked in.",
+        "Retrieval runs on ChromaDB with hybrid strategies, so a question asked in Persian can surface passages from English sources and come back as one coherent answer."
+      ],
+      "highlights": [
+        "Cross-language retrieval: ask in Persian, find answers in English sources",
+        "Query-expansion sub-agent: five semantic variants in the source language",
+        "Orchestrator checks retrieval sufficiency before answering",
+        "ChromaDB with hybrid retrieval strategies"
+      ]
+    },
+    "fa": {
+      "title": "کتابدار شخصی",
+      "tagline": "دستیار RAG چندزبانه که به پرسش‌ها از روی کل کتابخانهٔ کتاب‌ها و اسناد شما پاسخ می‌دهد.",
+      "description": [
+        "کتابداری شخصی که واقعاً همهٔ قفسه را خوانده است — و برایش مهم نیست هر کدام به چه زبانی نوشته شده باشد. معماری ارکستریتور/زیرایجنت کار را تقسیم می‌کند: زیرایجنتِ بسط پرس‌وجو پنج پرس‌وجوی هم‌معنا به زبانِ خود سند تولید می‌کند، ارکستریتور پیش از پاسخ قضاوت می‌کند که بازیابی شواهد کافی پیدا کرده یا نه، و پالایش‌گر به همان زبانی که پرسیده‌اید پاسخ می‌دهد.",
+        "بازیابی روی ChromaDB با راهبردهای ترکیبی اجرا می‌شود؛ بنابراین پرسشی به فارسی می‌تواند قطعه‌هایی از منابع انگلیسی را بیرون بکشد و در قالب یک پاسخ منسجم برگردد."
+      ],
+      "highlights": [
+        "بازیابی میان‌زبانی: به فارسی بپرسید، پاسخ را از منابع انگلیسی بیابید",
+        "زیرایجنت بسط پرس‌وجو: پنج نسخهٔ هم‌معنا به زبان منبع",
+        "ارکستریتور پیش از پاسخ، کفایت بازیابی را می‌سنجد",
+        "ChromaDB با راهبردهای بازیابی ترکیبی"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "zurvan",
+  "order": 1,
+  "period": "2025 — present",
+  "status": "active",
+  "tech": ["Python", "GAME-loop architecture", "Pydantic", "LiteLLM", "Multi-agent", "PyPI"],
+  "links": {
+    "github": "https://github.com/aliafsahnoudeh/zurvan"
+  },
+  "stats": { "firepower": 9, "armor": 9, "speed": 7, "special": 8 },
+  "i18n": {
+    "en": {
+      "title": "Zurvan",
+      "tagline": "An open-source, goal-driven Python framework for building production AI agents.",
+      "description": [
+        "Zurvan — named after the Zoroastrian deity of time — is an open-source framework for building AI agents that survive contact with production. Agents are modelled on a composable GAME loop (Goals, Actions, Memory, Environment), and behaviour is injected through Capability hooks rather than subclassing — so the agent core stays minimal and testable.",
+        "Tool inputs are Pydantic-validated, and when a model produces something invalid, the agent self-corrects from the validation errors instead of crashing. A LiteLLM abstraction keeps the whole framework provider-agnostic: swap Claude, OpenAI or Gemini without touching agent code. Published on PyPI."
+      ],
+      "highlights": [
+        "Composable GAME-loop architecture: Goals, Actions, Memory, Environment",
+        "Capability hooks instead of subclassing — minimal, testable agent core",
+        "Pydantic-validated tool inputs with LLM self-correction on validation failure",
+        "Provider-agnostic via LiteLLM; published on PyPI"
+      ]
+    },
+    "fa": {
+      "title": "زروان",
+      "tagline": "فریم‌ورک متن‌باز و هدف‌محور پایتون برای ساخت ایجنت‌های هوش مصنوعی در سطح پروداکشن.",
+      "description": [
+        "زروان — برگرفته از نام ایزد زمان در آیین زرتشتی — فریم‌ورکی متن‌باز برای ساخت ایجنت‌هایی است که برخورد با پروداکشن را تاب می‌آورند. ایجنت‌ها بر پایهٔ حلقهٔ ترکیب‌پذیر GAME (هدف‌ها، کنش‌ها، حافظه، محیط) مدل می‌شوند و رفتار به‌جای ارث‌بری، از طریق هوک‌های Capability تزریق می‌شود — تا هستهٔ ایجنت کوچک و آزمون‌پذیر بماند.",
+        "ورودی ابزارها با Pydantic اعتبارسنجی می‌شود و اگر مدل خروجی نامعتبری تولید کند، ایجنت به‌جای فروپاشی، از روی خطاهای اعتبارسنجی خودش را اصلاح می‌کند. لایهٔ LiteLLM کل فریم‌ورک را مستقل از ارائه‌دهنده نگه می‌دارد: Claude و OpenAI و Gemini را بدون دست زدن به کد ایجنت جابه‌جا کنید. روی PyPI منتشر شده است."
+      ],
+      "highlights": [
+        "معماری حلقهٔ ترکیب‌پذیر GAME: هدف‌ها، کنش‌ها، حافظه، محیط",
+        "هوک‌های Capability به‌جای ارث‌بری — هستهٔ ایجنت کوچک و آزمون‌پذیر",
+        "اعتبارسنجی ورودی ابزارها با Pydantic و خوداصلاحی LLM هنگام خطای اعتبارسنجی",
+        "مستقل از ارائه‌دهنده با LiteLLM؛ منتشرشده روی PyPI"
+      ]
+    }
+  }
+}
