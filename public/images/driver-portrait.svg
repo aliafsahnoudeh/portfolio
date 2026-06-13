@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <!-- Placeholder driver portrait: posterized PS1-FMV look, bald + stubble. -->
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+      <feColorMatrix in="n" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.12 0" result="a"/>
+      <feComposite in="a" in2="SourceGraphic" operator="over"/>
+    </filter>
+  </defs>
+  <g filter="url(#grain)">
+    <rect width="96" height="96" fill="#16120e"/>
+    <ellipse cx="48" cy="34" rx="34" ry="30" fill="#3a1210"/>
+    <!-- shoulders -->
+    <path d="M14 96 L20 74 Q48 62 76 74 L82 96 Z" fill="#1c1a17"/>
+    <path d="M14 96 L20 74 Q34 68 48 67 L48 96 Z" fill="#23201c"/>
+    <!-- neck -->
+    <rect x="40" y="58" width="16" height="14" fill="#a87f63"/>
+    <rect x="40" y="58" width="16" height="6" fill="#8a6750"/>
+    <!-- bald head: flat posterized tones -->
+    <path d="M30 38 Q30 14 48 14 Q66 14 66 38 Q66 52 60 58 Q54 64 48 64 Q42 64 36 58 Q30 52 30 38 Z" fill="#caa183"/>
+    <path d="M48 14 Q66 14 66 38 Q66 52 60 58 Q54 64 48 64 Z" fill="#b08a6c"/>
+    <path d="M33 20 Q40 14 48 14 Q60 14 64 26 Q56 20 44 21 Q36 22 33 26 Z" fill="#e0bb98"/>
+    <!-- ears -->
+    <rect x="27" y="38" width="5" height="10" fill="#b08a6c"/>
+    <rect x="64" y="38" width="5" height="10" fill="#9a7558"/>
+    <!-- brow shadow -->
+    <path d="M34 36 Q41 33 46 36 L46 39 Q41 37 34 39 Z" fill="#6e5340"/>
+    <path d="M50 36 Q55 33 62 36 L62 39 Q55 37 50 39 Z" fill="#6e5340"/>
+    <!-- eyes: dark PS1 sockets -->
+    <rect x="36" y="38" width="9" height="4" fill="#241b14"/>
+    <rect x="52" y="38" width="9" height="4" fill="#241b14"/>
+    <rect x="39" y="38" width="3" height="3" fill="#caa183"/>
+    <rect x="55" y="38" width="3" height="3" fill="#caa183"/>
+    <!-- nose -->
+    <path d="M46 42 L44 51 L52 51 L50 42 Z" fill="#9a7558"/>
+    <!-- stubble: not-quite-full beard, flat tone -->
+    <path d="M34 48 Q36 58 42 61 Q48 64 54 61 Q60 58 62 48 Q62 56 56 61 Q50 66 46 65 Q38 63 34 54 Z" fill="#4a3a2e"/>
+    <path d="M36 52 Q42 62 48 62 Q56 62 60 52 Q58 60 52 63 L44 63 Q38 60 36 52 Z" fill="#3a2d24"/>
+    <!-- mouth -->
+    <rect x="43" y="54" width="10" height="2" fill="#241b14"/>
+    <!-- red rim light, very TM -->
+    <path d="M30 38 Q30 16 47 14 L47 17 Q33 19 33 38 Q33 50 38 56 L36 58 Q30 52 30 38 Z" fill="#c81d1d" opacity="0.55"/>
+  </g>
+  <!-- scanlines -->
+  <g fill="#000" opacity="0.18">
+    <rect y="3" width="96" height="1"/><rect y="9" width="96" height="1"/><rect y="15" width="96" height="1"/><rect y="21" width="96" height="1"/><rect y="27" width="96" height="1"/><rect y="33" width="96" height="1"/><rect y="39" width="96" height="1"/><rect y="45" width="96" height="1"/><rect y="51" width="96" height="1"/><rect y="57" width="96" height="1"/><rect y="63" width="96" height="1"/><rect y="69" width="96" height="1"/><rect y="75" width="96" height="1"/><rect y="81" width="96" height="1"/><rect y="87" width="96" height="1"/><rect y="93" width="96" height="1"/>
+  </g>
+</svg>

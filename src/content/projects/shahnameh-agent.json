@@ -1,0 +1,43 @@
+{
+  "slug": "shahnameh-agent",
+  "order": 3,
+  "period": "2025 — present",
+  "status": "active",
+  "tech": ["Python", "Whisper large-v3", "Postgres/pgvector", "MCP", "RAG", "Semantic chunking"],
+  "links": {
+    "github": "https://github.com/aliafsahnoudeh/shahnameh-mcp-server"
+  },
+  "stats": { "firepower": 7, "armor": 7, "speed": 6, "special": 10 },
+  "i18n": {
+    "en": {
+      "title": "Shahnameh AI Agent",
+      "tagline": "A RAG agent over the 60,000-couplet Shahnameh — citation-grounded answers where frontier LLMs guess.",
+      "description": [
+        "A retrieval-augmented agent over Ferdowsi's Shahnameh, the foundational epic of Persian literature. This is exactly where frontier models fail: training data is sparse, the domain demands real scholarship, and confident hallucination is worse than no answer. So every answer is grounded in the actual verses plus expert scholarly interpretation, with citations.",
+        "The ingestion pipeline is end-to-end: scholarly audio is transcribed with Whisper (large-v3), normalised from SRT, semantically chunked, embedded, and loaded into a Postgres/pgvector store — raw audio to vector DB to grounded answers. A custom MCP server, built on top of a collaborator's API, exposes verse retrieval and interpretation tools to any MCP-compatible LLM client."
+      ],
+      "highlights": [
+        "Citation-grounded answers over a 60,000-couplet corpus",
+        "Audio → text → vectors: Whisper large-v3, SRT normalisation, semantic chunking, pgvector",
+        "Custom MCP server: verse retrieval and interpretation for any MCP client",
+        "Expert scholarly interpretation, not just raw verses",
+        "Solves what frontier LLMs can't: precise answers where training data is sparse"
+      ]
+    },
+    "fa": {
+      "title": "ایجنت هوش مصنوعی شاهنامه",
+      "tagline": "ایجنت RAG روی شاهنامهٔ شصت‌هزاربیتی — پاسخ‌های مستند به ابیات، آنجا که مدل‌های پیشرو حدس می‌زنند.",
+      "description": [
+        "ایجنتی مبتنی بر بازیابی روی شاهنامهٔ فردوسی، حماسهٔ بنیادین ادبیات فارسی. اینجا دقیقاً همان‌جایی است که مدل‌های پیشرو شکست می‌خورند: دادهٔ آموزشی کم است، این حوزه پژوهش واقعی می‌خواهد، و توهمِ بااعتمادبه‌نفس از بی‌پاسخی بدتر است. پس هر پاسخ به خودِ ابیات و تفسیر کارشناسانهٔ پژوهشگران مستند است، همراه با ارجاع.",
+        "پایپ‌لاین ورود داده سرتاسری است: صوت پژوهشی با Whisper (نسخهٔ large-v3) پیاده‌سازی می‌شود، از قالب SRT نرمال‌سازی، به‌صورت معنایی قطعه‌بندی، embed و در Postgres/pgvector بارگذاری می‌شود — از صوت خام تا پایگاه برداری تا پاسخ مستند. یک سرور MCP اختصاصی که روی API یکی از همکاران ساخته شده، ابزارهای بازیابی ابیات و تفسیر را در اختیار هر کلاینت سازگار با MCP می‌گذارد."
+      ],
+      "highlights": [
+        "پاسخ‌های مستند به ابیات روی پیکره‌ای شصت‌هزاربیتی",
+        "صوت ← متن ← بردار: Whisper large-v3، نرمال‌سازی SRT، قطعه‌بندی معنایی، pgvector",
+        "سرور MCP اختصاصی: بازیابی ابیات و تفسیر برای هر کلاینت MCP",
+        "تفسیر کارشناسانهٔ پژوهشی، نه فقط ابیات خام",
+        "حل همان چیزی که مدل‌های پیشرو نمی‌توانند: پاسخ دقیق آنجا که دادهٔ آموزشی کم است"
+      ]
+    }
+  }
+}
