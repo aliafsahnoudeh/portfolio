@@ -1,0 +1,167 @@
+{
+  "site": {
+    "name": "Ali's Portfolio",
+    "title": "Ali Afsahnoudeh — Senior AI Engineer · AI Agents, RAG & LLM Systems",
+    "description": "The portfolio of Ali Afsah-Noudeh, Senior AI Engineer building production agent systems — as a playable Twisted Metal homage: drive a white Peykan through a PS1-style arena and destroy billboards to explore real AI projects."
+  },
+  "home": {
+    "h1": "Ali Afsah-Noudeh",
+    "role": "Senior AI Engineer · AI Agents, RAG & LLM Systems",
+    "intro": "I build production AI agent systems — DAG-based orchestration, multi-agent architectures, RAG, MCP servers, and the safety controls that keep LLMs reliable when it matters: structured output validation, prompt-injection defence, hallucination mitigation, graceful degradation. 14+ years across the full stack back that up. This portfolio is a playable homage to PlayStation's Twisted Metal: you drive a white Peykan around a PS1-style arena and blow up billboards to discover my projects.",
+    "playHint": "A game should load here. If it didn't, everything is also available the boring way:",
+    "projectsLink": "Browse all projects",
+    "bioLink": "About the driver",
+    "contactLink": "Get in touch"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "bio": "Driver Bio",
+    "contact": "Contact",
+    "skipIntro": "SKIP INTRO — PLAIN SITE"
+  },
+  "menu": {
+    "pressStart": "PRESS START",
+    "startGame": "START GAME",
+    "projects": "PROJECTS",
+    "driverBio": "DRIVER BIO",
+    "contact": "CONTACT",
+    "options": "OPTIONS",
+    "resume": "RESUME",
+    "quitToMenu": "QUIT TO MENU",
+    "paused": "PAUSED",
+    "presents": "ALI AFSAH-NOUDEH PRESENTS",
+    "loading": "LOADING",
+    "smallprint": "An unofficial homage to a PS1 classic. No actual Peykans were harmed.",
+    "select": "SELECT",
+    "menuHint": "ARROWS TO NAVIGATE · ENTER TO SELECT",
+    "backHint": "ESC TO GO BACK"
+  },
+  "options": {
+    "title": "OPTIONS",
+    "language": "LANGUAGE",
+    "sound": "SOUND",
+    "on": "ON",
+    "off": "OFF",
+    "crt": "CRT FILTER",
+    "back": "BACK"
+  },
+  "vehicleSelect": {
+    "title": "CHOOSE YOUR VEHICLE",
+    "vehicleName": "WHITE PEYKAN 1374",
+    "vehicleSub": "Fiberglass bumpers · Hillman gearbox · zero airbags",
+    "driver": "DRIVER",
+    "driverName": "ALI",
+    "driverBlurb": "Bald. Bearded-ish. Ships production AI agents by day, drives a Peykan by night.",
+    "statSpeed": "SPEED — TypeScript",
+    "statArmor": "ARMOR — 14 yrs XP",
+    "statSpecial": "SPECIAL — AI Agents",
+    "confirm": "PRESS ENTER TO DEPLOY"
+  },
+  "hud": {
+    "health": "ARMOR",
+    "turbo": "TURBO",
+    "destroyed": "PROJECTS {destroyed}/{total}",
+    "machineGun": "MG",
+    "missile": "MSL",
+    "special": "SPC"
+  },
+  "legend": {
+    "title": "CONTROLS",
+    "drive": "Drive",
+    "machineGun": "Machine gun",
+    "missile": "Missile",
+    "special": "Special — Samovar Strike",
+    "turbo": "Turbo / handbrake",
+    "pause": "Pause"
+  },
+  "stats": {
+    "firepower": "FIREPOWER",
+    "armor": "ARMOR",
+    "speed": "SPEED",
+    "special": "SPECIAL"
+  },
+  "status": {
+    "label": "STATUS",
+    "active": "ACTIVE",
+    "archived": "ARCHIVED",
+    "wip": "IN THE SHOP"
+  },
+  "project": {
+    "intel": "PROJECT INTEL",
+    "destroyed": "TARGET DESTROYED",
+    "fullDossier": "FULL DOSSIER",
+    "tech": "TECH",
+    "highlights": "BATTLE RECORD",
+    "period": "ACTIVE SINCE",
+    "links": "LINKS",
+    "github": "GitHub",
+    "demo": "Live demo",
+    "writeup": "Write-up",
+    "backToArena": "BACK TO ARENA",
+    "backToProjects": "ALL PROJECTS"
+  },
+  "projectsPage": {
+    "title": "Projects",
+    "metaTitle": "Projects",
+    "metaDescription": "AI agents, frameworks and systems built by Ali Afsah-Noudeh — Zurvan, wildfire detection, Shahnameh RAG, and more.",
+    "subtitle": "THE GARAGE",
+    "blurb": "Every machine in here was built from scratch, and most are street-legal on GitHub. Pick one to read its full dossier — or go back and blow it up properly.",
+    "playInstead": "Play the arena instead"
+  },
+  "bio": {
+    "metaTitle": "Driver Bio",
+    "metaDescription": "About Ali Afsah-Noudeh — Senior AI Engineer with 14+ years of experience, building production AI agent systems, RAG pipelines and the platforms around them.",
+    "title": "Driver Bio",
+    "subtitle": "DRIVER DOSSIER",
+    "name": "ALI AFSAH-NOUDEH",
+    "vehicle": "VEHICLE: WHITE PEYKAN 1374",
+    "p1": "Senior AI engineer with 14+ years of shipping software, based in Düsseldorf, Germany, working remote-first. I specialise in production agent systems: DAG-based orchestration, multi-agent architectures, RAG and context construction, MCP servers, and LLM evaluation — plus the safety controls that make LLMs dependable in the real world: structured output validation, prompt-injection defence, hallucination mitigation, and graceful degradation when models fail.",
+    "p2": "The full-stack years are what make the agents production-grade. I've built everything from C# desktop apps and video-conferencing platforms to React and Vue frontends and FastAPI microservices — so my agent systems ship with fault tolerance, observability, ACID-backed state, async concurrency and cost-aware design, not just clever prompts. Zurvan, my open-source Python agent framework, distils all of that into a composable GAME-loop core.",
+    "p3": "Off the keyboard I'm a music composer and multi-instrumentalist — my BSc thesis was a musical chord-and-scale calculator, and I've since built a multimodal AI analyser for the modes of traditional Persian music. I'm also a long-time student of psychology, focused on leadership and team dynamics. And yes, I put a Peykan in my portfolio: slow, indestructible, beloved — everything I want my software to be, minus the slow.",
+    "factsTitle": "VITAL STATS",
+    "facts": [
+      "14+ years of engineering — from C# desktop apps to multi-agent AI systems",
+      "AI agents in production: orchestration, RAG, MCP servers, evals, safety controls",
+      "Python · TypeScript · FastAPI · React/Next.js · PostgreSQL · AWS/GCP",
+      "Author of Zurvan — an open-source Python agent framework on PyPI",
+      "Writes about AI engineering on Medium",
+      "English · Persian · German",
+      "Music composer & multi-instrumentalist"
+    ]
+  },
+  "contact": {
+    "metaTitle": "Contact",
+    "metaDescription": "Get in touch with Ali Afsah-Noudeh — GitHub, LinkedIn, Medium.",
+    "title": "Contact",
+    "subtitle": "JOIN THE CONVOY",
+    "blurb": "Want to build something, hire the driver, or argue about whether the Peykan deserves a racing stripe? Find me here:",
+    "github": "GitHub — aliafsahnoudeh",
+    "linkedin": "LinkedIn — aliafsahnoudeh",
+    "medium": "Medium — writing on AI engineering"
+  },
+  "victory": {
+    "title": "YOU'VE SEEN EVERYTHING",
+    "subtitle": "All targets destroyed. The arena is yours.",
+    "cta": "HIRE THE DRIVER"
+  },
+  "mobile": {
+    "title": "WRONG VEHICLE",
+    "body": "The arena needs a keyboard — touch controls are coming in a future update. Meanwhile, the full dossier collection is open:",
+    "cta": "VIEW PROJECTS"
+  },
+  "notFound": {
+    "title": "404 — OUT OF BOUNDS",
+    "body": "You drove off the map. There's nothing here but fog and unrendered polygons.",
+    "back": "BACK TO THE ARENA"
+  },
+  "footer": {
+    "tagline": "Built with Next.js, React Three Fiber and one (1) Peykan. No actual billboards were harmed.",
+    "rights": "© {year} Ali Afsah-Noudeh"
+  },
+  "langSwitcher": {
+    "label": "Language",
+    "en": "EN",
+    "fa": "فارسی"
+  }
+}
