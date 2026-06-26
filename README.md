@@ -106,3 +106,7 @@ All interface strings live in `src/messages/en.json` and `src/messages/fa.json`.
 
 `public/images/driver-portrait.svg` is a placeholder. Swap in a posterized/
 dithered image (PS1 FMV style) — referenced from the vehicle-select screen.
+
+## TODO
+
+- Check https://pixijs.com/8.x/guides/getting-started/intro for potential replacement of React Three Fiber with PixiJS?
